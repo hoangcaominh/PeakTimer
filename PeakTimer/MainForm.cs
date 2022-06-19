@@ -13,7 +13,7 @@ namespace PeakTimer
 
         private void WriteNewConfig()
         {
-            File.WriteAllLines("config.txt", new string[] { "0", "3", "", "false" });
+            File.WriteAllLines("config.txt", new string[] { "0", "3", "Peak!", "false" });
         }
 
         public MainForm()
@@ -29,11 +29,11 @@ namespace PeakTimer
                 WriteNewConfig();
                 values = File.ReadAllLines("config.txt");
             }
-
             nudMinutes.Value = Convert.ToInt32(values[0]);
             nudSeconds.Value = Convert.ToInt32(values[1]);
             tbFinalText.Text = values[2];
             cbTriggerTimer.Checked = Convert.ToBoolean(values[3]);
+
             finalText = "";
             TimeTrigger.Value = DateTime.Now;
             // timeLeftTextFile = string.Format("timeleft-{0}.txt", DateTime.Now.ToString("yyyy-MM-dd-HH-mm-ss"));

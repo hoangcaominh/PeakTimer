@@ -252,6 +252,7 @@ namespace PeakTimer
             this.tbFinalText.Name = "tbFinalText";
             this.tbFinalText.Size = new System.Drawing.Size(318, 23);
             this.tbFinalText.TabIndex = 18;
+            this.tbFinalText.Text = "Peak!";
             // 
             // groupTimer
             // 
