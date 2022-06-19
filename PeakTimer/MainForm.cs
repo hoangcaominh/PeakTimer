@@ -67,7 +67,17 @@ namespace PeakTimer
 
         private void BtnStop_Click(object sender, EventArgs e)
         {
-            Stop();
+            if (timerTrigger.Enabled)
+            {
+                timerTrigger.Stop();
+            }
+            if (timer.Enabled)
+            {
+                timer.Stop();
+            }
+
+            btnStart.Enabled = true;
+            btnStop.Enabled = false;
         }
 
         private void BtnSet_Click(object sender, EventArgs e)
@@ -100,7 +110,7 @@ namespace PeakTimer
 
             if (minutes == 0 && seconds == 0)
             {
-                Stop();
+                btnStop.PerformClick();
                 timerText.Text = finalText;
             }
             else
@@ -139,21 +149,6 @@ namespace PeakTimer
         {
             File.WriteAllLines("config.txt", new string[] { minutes.ToString(), seconds.ToString(), finalText, cbTriggerTimer.Checked.ToString() });
             // if (File.Exists(timeLeftTextFile)) File.Delete(timeLeftTextFile);
-        }
-
-        private void Stop()
-        {
-            if (timerTrigger.Enabled)
-            {
-                timerTrigger.Stop();
-            }
-            if (timer.Enabled)
-            {
-                timer.Stop();
-            }
-
-            btnStart.Enabled = true;
-            btnStop.Enabled = false;
         }
     }
 }
