@@ -58,7 +58,7 @@ namespace PeakTimer
             // 
             // btnStart
             // 
-            this.btnStart.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnStart.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnStart.Location = new System.Drawing.Point(461, 87);
             this.btnStart.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnStart.Name = "btnStart";
@@ -109,7 +109,8 @@ namespace PeakTimer
             // 
             // lbTimeLeftFileName
             // 
-            this.lbTimeLeftFileName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbTimeLeftFileName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lbTimeLeftFileName.Location = new System.Drawing.Point(13, 275);
             this.lbTimeLeftFileName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbTimeLeftFileName.Name = "lbTimeLeftFileName";
@@ -150,7 +151,7 @@ namespace PeakTimer
             // 
             // btnStop
             // 
-            this.btnStop.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnStop.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnStop.Enabled = false;
             this.btnStop.Location = new System.Drawing.Point(381, 87);
             this.btnStop.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -272,7 +273,8 @@ namespace PeakTimer
             // 
             // lbTimerTrigger
             // 
-            this.lbTimerTrigger.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbTimerTrigger.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lbTimerTrigger.Location = new System.Drawing.Point(8, 19);
             this.lbTimerTrigger.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbTimerTrigger.Name = "lbTimerTrigger";
